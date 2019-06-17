@@ -1,0 +1,43 @@
+body {
+  height: 5000px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  margin-bottom: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+#file_table img{
+  width: 150px;
+}
+table td{
+  vertical-align: middle!important;
+}
+.drop-files{
+  height: 350px;
+  border: 1px solid #555;
+  background-color: #ababab;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: white;
+  border-radius: 15px;
+  transition: all 0.3s linear;
+}
+.drop-files.dragover{
+  background-color: deepskyblue;
+}

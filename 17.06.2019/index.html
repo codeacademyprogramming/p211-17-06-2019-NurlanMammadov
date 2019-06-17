@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Samir</title>
+    <meta name="keywords" content="şəkər tozu, pesok, şəkər çuğunduru" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <div class="drop-files">
+            <p>
+              Drag and drop your files here
+            </p>
+          </div>
+
+          <label>Files</label>
+          <input
+            type="file"
+            id="photos"
+            multiple
+            accept="image/*"
+            class="form-control"
+          />
+          <button class="btn btn-block btn-outline-success mt-5 add-more-files">
+            <i class="fas fa-plus"></i> Add more files
+          </button>
+          <button class="btn btn-block btn-outline-danger clear-all">
+            <i class="fas fa-trash-alt"></i> Clear all
+          </button>
+          <button class="btn btn-block btn-outline-danger mb-5 remove-selected d-none">
+            <i class="fas fa-trash-alt"></i> Remove Selected
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table id="file_table" class="table d-none">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Size</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
